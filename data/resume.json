@@ -1,0 +1,132 @@
+{
+  "basics": {
+    "name": "MD. ZOBAER AHMED",
+    "title": "CS Undergrad, Aspiring Product Manager, Digital PM Trainee, Photographer",
+    "summary": "Computer Science undergraduate at United International University with strong focus on Product Management. Completing Digital Product Management program and seeking internship opportunities to apply learning in real projects. Long-term goal: combine CSE background and PM skills to build impactful technology products for Bangladesh.",
+    "location": "Rampura, Dhaka-1219",
+    "email": "mdzobaerahmed31@gmail.com",
+    "phone": "+8801783503006",
+    "links": [
+      { "name": "LinkedIn", "url": "https://linkedin.com/in/mdzobaerahmed" },
+      { "name": "GitHub", "url": "https://github.com/mdzobaerahmed" }
+    ]
+  },
+  "education": [
+    {
+      "institution": "United International University",
+      "location": "Dhaka, Bangladesh",
+      "degree": "B.Sc. in Computer Science and Engineering",
+      "dates": "(8th Trimester)"
+    },
+    {
+      "institution": "Dhaka Residential Model College",
+      "location": "Dhaka, Bangladesh",
+      "degree": "Higher Secondary Certificate (HSC) – GPA: 5.00/5.00",
+      "dates": "2021"
+    },
+    {
+      "institution": "Chairman Bazar Secondary School",
+      "location": "Barisal, Bangladesh",
+      "degree": "Secondary School Certificate (SSC) – GPA: 5.00/5.00",
+      "dates": "2019"
+    }
+  ],
+  "skills": [
+    {
+      "category": "Tools & Technologies",
+      "items": ["Microsoft Office", "Canva", "Adobe Lightroom", "Google Workspace"]
+    },
+    {
+      "category": "Programming",
+      "items": ["C", "Java", "Python (Basic)"]
+    },
+    {
+      "category": "Soft Skills",
+      "items": ["Team Management", "Event Organization", "Leadership", "Photography & Design"]
+    },
+    {
+      "category": "Languages",
+      "items": ["Bangla (Native)", "English (Professional)"]
+    }
+  ],
+  "experience": [
+    {
+      "company": "IDP Education Ltd",
+      "location": "Dhaka, Bangladesh",
+      "role": "IELTS Invigilator",
+      "dates": "Jan 2026 – Present",
+      "bullets": []
+    },
+    {
+      "company": "UIU Photography Club",
+      "location": "Dhaka, Bangladesh",
+      "role": "Vice President",
+      "dates": "Jan 2026 – Present",
+      "bullets": [
+        "Organized major events: Photo Carnival 23, Friday Exposure Exhibition and Shutter Stories: Chapter IV at UIU"
+      ]
+    },
+    {
+      "company": "Lumeo Stories",
+      "location": "Dhaka, Bangladesh",
+      "role": "Photographer & Visual Storyteller",
+      "dates": "Apr 2021 – Present",
+      "bullets": []
+    },
+    {
+      "company": "Interactive Cares",
+      "location": "Dhaka, Bangladesh",
+      "role": "Brand Representative",
+      "dates": "May 2025 – September 2025",
+      "bullets": [
+        "Representing Interactive Cares brand at university and community events"
+      ]
+    },
+    {
+      "company": "Remains Art Club",
+      "location": "Dhaka, Bangladesh",
+      "role": "Executive Member",
+      "dates": "Feb 2020 – Mar 2021",
+      "bullets": [
+        "Organized national fest \"Artsy Overlap 2021\" at Dhaka Residential Model College"
+      ]
+    }
+  ],
+  "certifications": [
+    "Digital Product Management Career Path – Interactive Cares",
+    "Aspire Leaders Program – Aspire Institute, Harvard Business School",
+    "Introduction to Digital Marketing – Futurenation",
+    "Fundamentals of Cybersecurity – Ostad"
+  ],
+  "achievements": [
+    {
+      "title": "Winner",
+      "context": "Life at UIU Photography Contest 2024"
+    },
+    {
+      "title": "Winner",
+      "context": "Camera Photography (Senior Category), Reflection 3.0 National GSCPC Photography Festival"
+    },
+    {
+      "title": "1st Runner-up",
+      "context": "Nature Through Your Lens, 3rd DRMC National Nature Festival 2024"
+    },
+    {
+      "title": "International Recognition",
+      "context": "Selected for exhibitions in Greece and Scotland (2024–2025)"
+    },
+    {
+      "title": "Government Scholarships",
+      "context": "PSC (2013), JSC (2016), SSC (2019)"
+    }
+  ],
+  "extra": [
+    {
+      "category": "References",
+      "items": [
+        "Samin Sharaf Somik — Lecturer, Dept. of CSE, United International University — samin@cse.uiu.ac.bd",
+        "Md Asique Iqbal — Lecturer, ICT, Dhaka Residential Model College — asique.iqbaldrmc@gmail.com"
+      ]
+    }
+  ]
+}
