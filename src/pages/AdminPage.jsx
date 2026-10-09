@@ -100,14 +100,15 @@ export function AdminPage({ darkMode, onBack }) {
     }
   }, [isAuthenticated]);
 
-  const handleLogin = (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
-    if (verifyAdminPassword(passwordInput)) {
+    const isValid = await verifyAdminPassword(passwordInput);
+    if (isValid) {
       sessionStorage.setItem('mza_admin_logged_in', 'true');
       setIsAuthenticated(true);
       setLoginError('');
     } else {
-      setLoginError('Incorrect password. Default is "admin2026"');
+      setLoginError('Incorrect administrator password. Access denied.');
     }
   };
 
@@ -268,10 +269,10 @@ export function AdminPage({ darkMode, onBack }) {
     setMessages(getStoredMessages());
   };
 
-  const handleSaveSettings = (e) => {
+  const handleSaveSettings = async (e) => {
     e.preventDefault();
     if (newPassword.trim()) {
-      setAdminPassword(newPassword.trim());
+      await setAdminPassword(newPassword.trim());
       setNewPassword('');
     }
     if (adminEmail.trim()) {
@@ -445,7 +446,7 @@ create policy "Allow all messages access" on contact_messages for all using (tru
             </button>
 
             <p className="text-[11px] text-slate-500 text-center font-mono pt-2">
-              Default password: <span className="text-amber-500 font-bold">admin2026</span>
+              Authorized administrator access only
             </p>
           </form>
         </div>

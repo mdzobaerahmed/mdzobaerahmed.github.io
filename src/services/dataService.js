@@ -355,14 +355,34 @@ export async function syncFromSupabase() {
   }
 }
 
-// 6. Admin Authentication
-export function verifyAdminPassword(inputPass) {
-  const saved = localStorage.getItem(STORAGE_KEYS.ADMIN_PASSWORD) || 'admin2026';
-  return inputPass === saved;
+// 6. Admin Authentication (Cryptographic SHA-256 Hash Protection)
+const DEFAULT_ADMIN_HASH = '6051fc84a7a0d74c225fb18a496b09952da5642e60723ecae543298edd7d82d6';
+
+export async function hashString(str) {
+  if (typeof crypto !== 'undefined' && crypto.subtle) {
+    const msgBuffer = new TextEncoder().encode(str);
+    const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
+    return Array.from(new Uint8Array(hashBuffer)).map(b => b.toString(16).padStart(2, '0')).join('');
+  }
+  let hash = 0;
+  for (let i = 0; i < str.length; i++) {
+    hash = ((hash << 5) - hash) + str.charCodeAt(i);
+    hash |= 0;
+  }
+  return hash.toString();
 }
 
-export function setAdminPassword(newPass) {
-  localStorage.setItem(STORAGE_KEYS.ADMIN_PASSWORD, newPass);
+export async function verifyAdminPassword(inputPass) {
+  if (!inputPass) return false;
+  const inputHash = await hashString(inputPass.trim());
+  const storedHash = localStorage.getItem(STORAGE_KEYS.ADMIN_PASSWORD) || DEFAULT_ADMIN_HASH;
+  return inputHash === storedHash;
+}
+
+export async function setAdminPassword(newPass) {
+  if (!newPass) return;
+  const newHash = await hashString(newPass.trim());
+  localStorage.setItem(STORAGE_KEYS.ADMIN_PASSWORD, newHash);
 }
 
 export function getAdminEmail() {
