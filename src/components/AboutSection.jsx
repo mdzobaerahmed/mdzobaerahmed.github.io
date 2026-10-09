@@ -224,7 +224,7 @@ export function AboutSection({
                 </div>
 
                 <div className="pt-6 mt-6 border-t border-slate-800/50 flex items-center justify-between font-mono text-[11px] text-slate-500">
-                  <span>{experienceTimeline.length} Professional & Leadership Roles</span>
+                  <span>Professional & Leadership Roles</span>
                   <span className="text-amber-500">2020 — Present</span>
                 </div>
               </div>
@@ -302,8 +302,7 @@ export function AboutSection({
                 </div>
 
                 <div className="pt-6 mt-6 border-t border-slate-800/50 flex items-center justify-between font-mono text-[11px] text-slate-500">
-                  <span>UIU CSE • DRMC • Chairman Bazar</span>
-                  <span className="text-emerald-400 font-semibold">GPA 5.00 Golden</span>
+                  <span>UIU CSE • DRMC</span>
                 </div>
               </div>
             )}
